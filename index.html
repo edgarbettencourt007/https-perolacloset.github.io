@@ -1,24 +1,42 @@
-html
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pérola Closet ❤️🛍</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #ffe6f0;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 50px;
+      padding: 50px 20px;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
+
     h1 {
       color: #d63384;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
     }
+
     p {
       font-size: 18px;
-      margin: 20px 0;
+      margin: 15px 0;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
     .btn {
       background-color: #d63384;
       color: white;
@@ -26,16 +44,28 @@ html
       text-decoration: none;
       font-size: 16px;
       border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
     }
+
     .btn:hover {
       background-color: #c2185b;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
     }
   </style>
 </head>
 <body>
-  <h1>🛍️ Pérola Closet ❤️</h1>
-  <p>Vestidos, Camisetas, Ténis, Sandálias, Perfumes, Colares, Relógios, Bonés, Perucas e muito mais...</p>
-  <p>💰 Os preços variam de cada artigo, e você pode pagar em prestação! Valores começam a partir de 100 MZN</p>
-  <a class="btn" href="https://wa.me/258868889185" target="_blank">Fazer Pedido via WhatsApp</a>
+  <main>
+    <h1>🛍️ Pérola Closet ❤️</h1>
+    <p>Vestidos, Camisetas, Ténis, Sandálias, Perfumes, Colares, Relógios, Bonés, Perucas e muito mais...</p>
+    <p>💰 Os preços variam de cada artigo, e você pode pagar em prestação! Valores começam a partir de 100 MZN</p>
+    <a class="btn" href="https://wa.me/258868889185" target="_blank" rel="noopener noreferrer">Fazer Pedido via WhatsApp</a>
+  </main>
 </body>
 </html>
